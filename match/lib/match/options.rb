@@ -62,6 +62,11 @@ module Match
                                      description: "Skip syncing provisioning profiles",
                                      type: Boolean,
                                      default_value: false),
+        FastlaneCore::ConfigItem.new(key: :renew_expired_certs,
+                                     env_name: "MATCH_RENEW_EXPIRED_CERTS",
+                                     description: "Renew expired certificates",
+                                     type: Boolean,
+                                     default_value: false),
 
         FastlaneCore::ConfigItem.new(key: :app_identifier,
                                      short_option: "-a",
